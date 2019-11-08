@@ -1,0 +1,13 @@
+{# {% extends "../base.html" %} #}
+{% block body_block %}
+
+<div class="jumbotron">
+	<h1>INPUT-1</h1>
+	<form method="POST" novalidate>
+		{% csrf_token %}
+		{{ form.as_p }}
+    	<button type="submit">NEXT</button>
+  </form>
+</div>
+
+{% endblock %}
